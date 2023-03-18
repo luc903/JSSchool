@@ -1,0 +1,22 @@
+%btn {
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    display: inline-block;
+    max-width: 200px;
+}
+
+.btn {
+    @extend %btn;
+    
+    @at-root &--primary {
+        @extend %btn;
+    }
+
+    @at-root &--secondary {
+        @extend %btn;
+        background: $onyx;
+        color: $white;
+    }
+}

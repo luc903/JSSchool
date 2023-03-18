@@ -1,5 +1,14 @@
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     margin: .5rem .2rem;
     display: inline-block;
     width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $black;
+    padding: .3rem;
+    margin: $vertical-spacing 0;
+}
+
+form {
+    display: contents;
 }

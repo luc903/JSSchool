@@ -13,9 +13,57 @@ include_once('templates/layout/header.php'); ?>
 <div class="block">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 text-centre">
-                <h1>Some Elements to play with</h1>
+            <div class="col-xs-12">
+                <h1 class="text-centre">Some Elements to play with</h1>
+            </div>
+            <div class="col-xs-12 col-md-6">
                 <p>Pellentesque lobortis dignissim turpis ut fringilla. Morbi ultrices dignissim felis vel dignissim. Maecenas bibendum pellentesque velit, nec fermentum ante fermentum sit amet. Phasellus porttitor facilisis tincidunt. Vestibulum sed varius nisl. Proin nec quam auctor ligula auctor congue id nec est. Donec eros eros, tempor in mauris eu, venenatis porttitor ligula. </p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-centre">
+                <h1>Form</h1>
+            </div>
+            <form>
+                <div class="col-xs-12 col-md-6">
+                    <input type="text" placeholder="First name" />
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <input type="text" placeholder="Last name" />
+                </div>
+                <div class="col-xs-12">
+                    <input type="email" placeholder="Email" />
+                </div>
+                <div class="col-xs-12">
+                    <input type="email" placeholder="Password" />
+                </div>
+                <div class="col-xs-12">
+                    <input type="email" placeholder="Confirm Password" />
+                </div>
+                <div class="col-xs-12 text-right">
+                    <button class="btn--primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 flex align-items-centre">
+                <p>Curabitur congue mauris ex, cursus eleifend enim sodales ut. Suspendisse sit amet efficitur libero, eu ullamcorper mi. Nullam rhoncus, elit dignissim cursus semper, turpis elit egestas est, nec accumsan augue tortor eu massa. Cras placerat quam lacus, non lobortis urna viverra porta.</p>
+            </div>
+            <div class="col-xs-6">
+                <div class="image-container--16-9">
+                    <img src="/images/pom.jpeg" />
+                </div>
             </div>
         </div>
     </div>

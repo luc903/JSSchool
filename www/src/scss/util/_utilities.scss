@@ -1,3 +1,19 @@
 .text-centre {
     text-align: center;
 }
+
+.text-right {
+    text-align: right;
+}
+
+.image-container--16-9 {
+    @include image-container(16, 9);
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items-centre {
+    align-items: center;
+}
