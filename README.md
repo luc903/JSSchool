@@ -1,7 +1,7 @@
 # JS School
 ## To start the project
-                run docker-compose up
                 run npm install
+                run docker-compose up
                 run gulp to open browsersync
 
 ## Node Version
