@@ -1,0 +1,19 @@
+%block {
+    min-height: 20vh;
+    padding: ($vertical-spacing * 3) 0;
+}
+
+.block {
+    @extend %block;
+
+    @at-root &--onyx {
+        @extend %block;
+        background-color: $onyx;
+        color: $white;
+    }
+    
+    @at-root &--ash-gray {
+        @extend %block;
+        background-color: $ash-gray;
+    }
+}

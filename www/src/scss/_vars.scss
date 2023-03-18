@@ -1,0 +1,25 @@
+/* Media Queries */
+$breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+
+/* Grid */
+$container-width: 1300px;
+$grid-gutters: 20px;
+
+/* Colours */
+$black: #000000ff;
+$white: #fff;
+$onyx: #363946ff;
+$dim-gray: #696773ff;
+$cadet-gray: #819595ff;
+$ash-gray: #b1b6a6ff;
+
+/* Typography */
+$base-font: 'Poppins', sans-serif;
+$header-font: 'Merriweather', serif;
+
+$paragraph-colour: $black;
+
+$link-colour: $paragraph-colour;
+
+/* Spacing */
+$vertical-spacing: 1rem;

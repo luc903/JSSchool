@@ -1,0 +1,26 @@
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $grid-gutters;
+}
+
+.row {
+    display: flex;
+    margin: 0 (-$grid-gutters);
+    flex-wrap: wrap;
+}
+
+@each $name, $breakpoint in $breakpoints {
+    @for $i from 0 to 13 {
+        @include media-min($name) {
+            .col-#{$name}-#{$i} {
+                width: calc(100% / 12 * #{$i});
+                padding: 0 $grid-gutters;
+            }
+
+            .col-#{$name}-offset-#{$i} {
+                margin-left: calc(100% / 12 * #{$i});
+            }
+        }
+    }
+}
