@@ -6,14 +6,18 @@
     text-align: right;
 }
 
-.image-container--16-9 {
-    @include image-container(16, 9);
-}
-
 .flex {
     display: flex;
 }
 
 .align-items-centre {
     align-items: center;
+}
+
+.image-container--1-1 {
+    @include image-container(1, 1);
+}
+
+.image-container--16-9 {
+    @include image-container(16, 9);
 }

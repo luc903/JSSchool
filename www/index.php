@@ -60,10 +60,10 @@ include_once('templates/layout/header.php'); ?>
             <div class="col-xs-12 text-centre">
                 <h1>Image</h1>
             </div>
-            <div class="col-xs-6 flex align-items-centre">
+            <div class="col-xs-12 col-md-6 flex align-items-centre">
                 <p>Curabitur congue mauris ex, cursus eleifend enim sodales ut. Suspendisse sit amet efficitur libero, eu ullamcorper mi. Nullam rhoncus, elit dignissim cursus semper, turpis elit egestas est, nec accumsan augue tortor eu massa. Cras placerat quam lacus, non lobortis urna viverra porta.</p>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-md-6">
                 <div class="image-container--16-9">
                     <img src="/images/pom.jpeg" />
                 </div>
