@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  nginx:
+    container_name: php_nginx
+    build: ./docker/nginx
+    command: nginx -g "daemon off;"
+    links:
+      - php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/html
+  php:
+    container_name: php_php
+    build: ./docker/php
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./www:/var/www/html
+    working_dir: /var/www/html
+  mysql:
+    image: mysql:5.7
+    container_name: php_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: php
+      MYSQL_USER: phpuser
+      MYSQL_PASSWORD: 'password'
+    ports:
+      - "53306:3306"
+    volumes:
+      - ./database/mysql:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8082:80
+    environment:
+      - PMA_HOST=php_mysql
+      - PMA_ARBITRARY=1
+  mailhog:
+    container_name: php_mailhog
+    image: mailhog/mailhog:latest
+    ports:
+      - 8081:8025
