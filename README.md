@@ -1,4 +1,4 @@
-# JSSchool
+# JS School
 ## To start the project
                 run docker-compose up
                 run npm install
